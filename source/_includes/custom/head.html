@@ -1,0 +1,82 @@
+<link href="{{ root_url }}/javascripts/libs/bootstrap-3.0.0/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="{{ root_url }}/javascripts/libs/bootstrap-3.0.0/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+<link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass+Mono:400" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+
+<style>
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#particles-js {
+  position: relative;
+  user-select: none;
+  background-color: #ececec;
+  background:linear-gradient(135deg, #0f55e4, #0a3a9c);
+  /*height: 100vh;*/
+  height: 50vh;
+}
+
+#banner {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  cursor: default;
+  height: 50vh;
+  width: 100%;
+  min-height: 35em;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+#banner_text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #fff;
+  font-size: 1.75em;
+  font-family: 'Overpass Mono', monospace;
+}
+</style>
+<div id="particles-js">
+  <div id="banner">
+    <div id="banner_text">code-a</div>
+  </div>
+</div>
+<script>
+  //ParticlesBG
+  particlesJS('particles-js',{'particles':{'number':{'value':50},'color':{'value':'#ffffff'},'shape':{'type':'triangle','polygon':{'nb_sides':5}},'opacity':{'value':0.06,'random':false},'size':{'value':11,'random':true},'line_linked':{'enable':true,'distance':150,'color':'#ffffff','opacity':0.4,'width':1},'move':{'enable':true,'speed':4,'direction':'none','random':false,'straight':false,'out_mode':'out','bounce':false}},'interactivity':{'detect_on':'canvas','events':{'onhover':{'enable':false},'onclick':{'enable':true,'mode':'push'},'resize':true},'modes':{'push':{'particles_nb':4}}},'retina_detect':true},function(){});
+
+  //typewriter
+  var tw_content = document.getElementById('banner_text');
+  var typewriter = new Typewriter(tw_content, {
+    loop: true
+  });
+  typewriter.typeString('[dev@code-a.io]> ')
+    .pauseFor(2000)
+    .typeString('it-security')
+    .pauseFor(2000)
+    .deleteChars(11)
+    .pauseFor(1500)
+    .typeString('workshops')
+    .pauseFor(2000)
+    .deleteChars(9)
+    .pauseFor(1500)
+    .typeString('software development')
+    .start();
+</script>

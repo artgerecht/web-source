@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[code-a]]></title>
+  <link href="https://code-a.io/atom.xml" rel="self"/>
+  <link href="https://code-a.io/"/>
+  <updated>2018-03-07T17:41:50+01:00</updated>
+  <id>https://code-a.io/</id>
+  <author>
+    <name><![CDATA[code-a]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
